@@ -57,6 +57,7 @@ fi
 if [ "$EXT_GOPATH" != "" ]; then
   # If local builds are requested, inject the sources
   echo "Building locally $1..."
+  echo " $GOPATH      $EXT_GOPATH"
   export GOPATH=$GOPATH:$EXT_GOPATH
   set -e
 
