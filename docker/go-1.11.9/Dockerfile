@@ -3,7 +3,7 @@
 #
 # Released under the MIT license.
 
-FROM youchain/xgo2:base
+FROM e-scavo/xgo2:base
 
 LABEL MAINTAINER Péter Szilágyi <peterke@gmail.com>
 

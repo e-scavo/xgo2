@@ -39,7 +39,7 @@ func init() {
 
 // Cross compilation docker containers
 // var dockerBase = "youchain/xgo2:base"
-var dockerDist = "youchain/xgo2:"
+var dockerDist = "e-scavo/xgo2:"
 
 // Command line arguments to fine tune the compilation
 var (
