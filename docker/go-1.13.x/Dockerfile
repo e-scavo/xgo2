@@ -3,6 +3,6 @@
 #
 # Released under the MIT license.
 
-FROM youchain/xgo2:1.13.4
+FROM e-scavo/xgo2:1.13.4
 
 LABEL MAINTAINER Péter Szilágyi <peterke@gmail.com>
