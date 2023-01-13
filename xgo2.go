@@ -220,7 +220,7 @@ func checkDocker() error {
 
 // Checks whether a required docker image is available locally.
 func checkDockerImage(image string) (bool, error) {
-	fmt.Printf("Checking for required docker image %s... ", image)
+	fmt.Printf("Checking for required 222 docker image %s... ", image)
 	out, err := exec.Command("docker", "images", "-q", image).Output()
 	if err != nil {
 		return false, err
