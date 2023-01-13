@@ -38,7 +38,7 @@ func init() {
 }
 
 // Cross compilation docker containers
-// var dockerBase = "youchain/xgo2:base"
+// var dockerBase = "e-scavo/xgo2:base"
 var dockerDist = "e-scavo/xgo2:"
 
 // Command line arguments to fine tune the compilation
@@ -113,6 +113,7 @@ func main() {
 		}
 		// Select the image to use, either official or custom
 		image = dockerDist + *goVersion
+		fmt.Printf("\nimage: %+v\n", image)
 		if *dockerImage != "" {
 			image = *dockerImage
 		}
