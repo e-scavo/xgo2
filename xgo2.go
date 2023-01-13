@@ -293,7 +293,7 @@ func compile(image string, config *ConfigFlags, flags *BuildFlags, folder string
 		}
 	}
 	// Assemble and run the cross compilation command
-	fmt.Printf("Cross compiling %s...\n", config.Repository)
+	fmt.Printf("Cross compiling norepo %s...\n", config.Repository)
 
 	args := []string{
 		"run", "--rm",
@@ -385,7 +385,7 @@ func compileContained(config *ConfigFlags, flags *BuildFlags, folder string) err
 		env = append(env, "EXT_GOPATH=/non-existent-path-to-signal-local-build")
 	}
 	// Assemble and run the local cross compilation command
-	fmt.Printf("Cross compiling %s...\n", config.Repository)
+	fmt.Printf("Cross compiling repo1 %s...\n", config.Repository)
 
 	cmd := exec.Command("/build.sh", config.Repository)
 	cmd.Env = append(os.Environ(), env...)
